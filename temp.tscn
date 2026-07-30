@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dincbfj6qen6b"]
+
+[ext_resource type="Script" uid="uid://cahhaawia1o28" path="res://temp.gd" id="1_pippe"]
+[ext_resource type="Texture2D" uid="uid://cfept5xsqnrta" path="res://MADE ASSETS/blank.png" id="2_ufh25"]
+[ext_resource type="Texture2D" uid="uid://bvowvvpy7ri25" path="res://PLAYER/onecu.png" id="3_k81e3"]
+
+[node name="temp" type="Node2D" unique_id=1105796533]
+script = ExtResource("1_pippe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=422901618]
+position = Vector2(574, 289)
+scale = Vector2(0.20833333, 0.20833333)
+texture = ExtResource("2_ufh25")
+
+[node name="Onecu" type="Sprite2D" parent="." unique_id=2145244447]
+texture_filter = 1
+position = Vector2(581, 107)
+scale = Vector2(6.625, 6.625)
+texture = ExtResource("3_k81e3")
