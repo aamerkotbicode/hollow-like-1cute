@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://biwh1wwfkfmql"]
+
+[ext_resource type="FontFile" uid="uid://ba2q5s11oys4p" path="res://FONT/Ithaca.ttf" id="1_mymak"]
+
+[node name="fontlabel" type="Label" unique_id=1559648856]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_mymak")
+text = "testext"
