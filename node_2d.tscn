@@ -2004,7 +2004,7 @@ use_kinematic_bodies = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1831249987]
 position = Vector2(0, -51)
 anchor_mode = 0
-zoom = Vector2(4, 4)
+zoom = Vector2(3.6, 3.6)
 
 [node name="Tip" type="Sprite2D" parent="." unique_id=172907911]
 texture_filter = 1
