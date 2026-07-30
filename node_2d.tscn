@@ -1979,27 +1979,25 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D" unique_id=757313304]
+[node name="Node2D" type="Node2D" unique_id=757313304 groups=["firescroll"]]
 script = ExtResource("1_kdubu")
 tip_pressed = ExtResource("2_ir8iy")
 tip_depressed = ExtResource("10_hqns4")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1282828998]
-position = Vector2(131, 40)
-scale = Vector2(2, 2)
-color = Color(0.7539839, 0.75398386, 0.75398386, 1)
-
 [node name="3" type="Sprite2D" parent="." unique_id=2119679700]
 position = Vector2(-142, -38)
 texture = ExtResource("4_ir8iy")
-
-[node name="Control" parent="." unique_id=1770298100 instance=ExtResource("5_kdubu")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1858864002]
 texture_filter = 1
 tile_map_data = PackedByteArray("AAAMAAQAAAACAAAAAAALAAQAAAABAAAAAAAKAAQAAAADAAAAAAAJAAQAAAACAAAAAAAIAAQAAAABAAAAAAAHAAQAAAACAAAAAAAGAAQAAAADAAAAAAANAAQAAAAEAAAAAAANAAUAAAAEAAEAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAEAAAAEAAYAAAABAAAAAAAFAAYAAAAQAAEAAAACAAYAAAACAAAAAAALAAIAAAAGAAYAAAAAAAYAAAACAAAAAAANAAYAAAAPAAEAAAAOAAYAAAAGAAAAAAAPAAYAAAACAAAAAAAQAAYAAAABAAAAAAARAAYAAAAGAAAAAAADAAYAAAAIAAAAAAABAAYAAAAHAAAAAAASAAYAAAACAAAAAAATAAYAAAABAAAAAAAVAAYAAAABAAAAAAAYAAYAAAABAAAAAAAUAAYAAAADAAAAAAAXAAYAAAABAAAAAAAWAAYAAAABAAAAAAAGAAUAAAABAAEAAAAIAAYAAAACAAEAAAAMAAYAAAADAAIAAAAKAAUAAAABAAMAAAAPAAcAAAADAAMAAAATAAcAAAABAAMAAAAUAAgAAAADAAMAAAAZAAYAAAAQAAEAAAAZAAUAAAAAAAIAAAARAAUAAAATAAsAAAAQAAUAAAASAAsAAAAWAAQAAAAAAAYAAAA=")
 tile_set = SubResource("TileSet_cyflf")
 use_kinematic_bodies = true
+
+[node name="Champer" parent="." unique_id=118659976 instance=ExtResource("9_4d7sh")]
+position = Vector2(149, 57)
+
+[node name="Control" parent="." unique_id=1770298100 instance=ExtResource("5_kdubu")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1831249987]
 position = Vector2(0, -51)
@@ -2025,7 +2023,9 @@ speed_scale = 7.0
 [node name="Player" parent="." unique_id=1860803679 instance=ExtResource("8_rj586")]
 position = Vector2(7, 77)
 
-[node name="Champer" parent="." unique_id=118659976 instance=ExtResource("9_4d7sh")]
-position = Vector2(149, 57)
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1282828998]
+position = Vector2(131, 40)
+scale = Vector2(2, 2)
+color = Color(0.7539839, 0.75398386, 0.75398386, 1)
 
 [connection signal="animation_finished" from="pop" to="." method="_on_pop_animation_finished"]

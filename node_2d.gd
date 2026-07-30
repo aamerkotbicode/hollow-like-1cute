@@ -1,7 +1,8 @@
 extends Node2D
 @export var tip_pressed = Texture2D
 @export var tip_depressed = Texture2D
-@export var pos : Vector2
+@export var pos: Vector2 = Vector2.ZERO
+
 func _ready():
 	$pop.visible = false
 
@@ -16,6 +17,8 @@ func _process(delta):
 		$pop.visible = true
 		$pop.play("pop")
 	pos = $Player.position
+
+
 
 
 func _on_pop_animation_finished():
